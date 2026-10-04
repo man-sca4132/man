@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMMS BET | Sports Betting Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#">EMMS<span>BET</span></a>
+  <nav>
+    <a href="#sports">Sports</a><a href="#live">Live</a><a href="#promos">Promos</a>
+  </nav>
+  <div class="account"><button class="ghost">Log in</button><button class="green">Sign up</button></div>
+  <button class="hamb">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="tag">SPORTS • ODDS • ACTION</p>
+    <h1>Bet smarter.<br><span>Play responsibly.</span></h1>
+    <p>EMMS BET is a modern sports-betting demo experience built around fast navigation, clear odds and a simple betting slip.</p>
+    <div class="hero-buttons"><a href="#sports" class="green big">Explore matches →</a><a href="#responsible" class="ghost big">Play responsibly</a></div>
+  </div>
+  <div class="hero-card">
+    <div class="mini-head"><b>⚡ LIVE NOW</b><span>DEMO ODDS</span></div>
+    <div class="match"><div><small>Football</small><b>North City</b><b>United Stars</b></div><div class="score">2 — 1<br><small>72'</small></div></div>
+    <div class="odds"><button>1 <strong>1.72</strong></button><button>X <strong>3.45</strong></button><button>2 <strong>4.20</strong></button></div>
+  </div>
+</section>
+
+<section id="live" class="section">
+  <div class="section-title"><div><p class="tag">LIVE CENTER</p><h2>What's happening</h2></div><span class="live-dot">● LIVE</span></div>
+  <div class="live-grid">
+    <article class="match-card"><div class="league">⚽ Premier Demo League <span>72'</span></div><h3>North City <em>2</em></h3><h3>United Stars <em>1</em></h3><div class="odds"><button>1 <strong>1.72</strong></button><button>X <strong>3.45</strong></button><button>2 <strong>4.20</strong></button></div></article>
+    <article class="match-card"><div class="league">🏀 Global Basketball <span>Q3</span></div><h3>Metro Lions <em>68</em></h3><h3>Capital Hawks <em>61</em></h3><div class="odds"><button>Home <strong>1.55</strong></button><button>Away <strong>2.35</strong></button></div></article>
+  </div>
+</section>
+
+<section id="sports" class="section">
+  <div class="section-title"><div><p class="tag">UPCOMING</p><h2>Choose your sport</h2></div></div>
+  <div class="sports"><button>⚽ Football <small>24 events</small></button><button>🏀 Basketball <small>12 events</small></button><button>🎾 Tennis <small>18 events</small></button><button>🏎️ Motorsport <small>6 events</small></button></div>
+  <div class="matches">
+    <div class="match-row"><div><small>Tomorrow · 16:00</small><b>Blue Lions vs Red Kings</b></div><button class="odd">1 <strong>2.10</strong></button><button class="odd">X <strong>3.10</strong></button><button class="odd">2 <strong>3.05</strong></button></div>
+    <div class="match-row"><div><small>Tomorrow · 19:30</small><b>East FC vs Royal City</b></div><button class="odd">1 <strong>1.88</strong></button><button class="odd">X <strong>3.60</strong></button><button class="odd">2 <strong>3.90</strong></button></div>
+    <div class="match-row"><div><small>Saturday · 15:00</small><b>Lake United vs Mountain FC</b></div><button class="odd">1 <strong>2.45</strong></button><button class="odd">X <strong>3.00</strong></button><button class="odd">2 <strong>2.70</strong></button></div>
+  </div>
+</section>
+
+<section id="promos" class="promo"><div><p class="tag">EMMS PROMO ZONE</p><h2>More sports.<br><span>More possibilities.</span></h2><p>Demo promotional area — replace with your approved offers and terms when operating legally.</p></div><div class="promo-box">🎁<b>WELCOME</b><small>Demo promotion</small></div></section>
+
+<section id="responsible" class="responsible"><p class="tag">RESPONSIBLE PLAY</p><h2>Keep it fun. Keep it controlled.</h2><p>This prototype uses simulated odds and does not process real-money bets. If you operate a real betting service, include age verification, responsible-gambling tools, licensing information and all required local compliance notices.</p></section>
+</main>
+
+<footer><b>EMMS<span>BET</span></b><span>© 2026 EMMS. Demo platform.</span></footer>
+
+<!-- Chatbot -->
+<button class="chat-launch" id="chatLaunch">💬</button>
+<div class="chatbox" id="chatbox">
+  <div class="chat-head"><div><b>EMMS Assistant</b><small>Online • Demo support</small></div><button id="chatClose">×</button></div>
+  <div class="messages" id="messages"><div class="bot">Hi 👋 I'm the EMMS Assistant. How can I help?</div></div>
+  <div class="quick"><button data-q="How do I place a bet?">How to bet</button><button data-q="What are the odds?">Odds</button><button data-q="Is this real money?">Real money?</button></div>
+  <form id="chatForm"><input id="chatInput" placeholder="Type your question..." autocomplete="off"><button>➤</button></form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
